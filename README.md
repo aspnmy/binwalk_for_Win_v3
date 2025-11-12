@@ -4,6 +4,13 @@
 ## 版本说明
 binwalk v3 rust重构版完美运行于linux环境，也可以docker部署，但是仍然有部分客户只会使用exe文件双击运行，故此重新适配编译了这个版本
 
+## 文件说明
+- readme.md 帮助文件
+- binwalk.exe binwalk编译在win11的命令行工具  建议在pwsh下 输入 .\binwalk --help 获得使用方法
+- binwalk_gui.exe  binwalk.exe程序WinGUI文件，双击执行即可，需要和binwalk.exe在同个目录下
+- unsquashfs.exe 位于.\sqfs_for_win\sqfs_for_win.7z 压缩包中，是squashfs压缩独立解包组件，命令行执行，作为备用方案
+- Tests 中是测试解包的Dlink的固件例子
+
 ## binwalk_for_Win_v3 可能遇到的几个问题
 
 -  Extraction of squashfs data at offset 0x1174A4 failed! 报错
