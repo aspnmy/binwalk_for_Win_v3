@@ -18,3 +18,24 @@ binwalk v3 rust重构版完美运行于linux环境，也可以docker部署，但
 
 - 考虑到部分用户只会双击exe 不会使用python脚本运行GUI交互界面，所以binwalk_gui.exe,使用pyinstaller进行编译后的独立exe GUI文件，使用binwalk_gui.exe的时候，需要和binwalk.exe在同级目录下，才能正确调用
   <img width="894" height="689" alt="image" src="https://github.com/user-attachments/assets/d71eae04-fe19-4e67-b076-9d3a52726f4a" />
+
+## 路由器固件解包以后重新打包的问题
+
+### 重新LZMA压缩编辑过的固件
+- 这个比较简单所以没写GUI程序，mksquashfs也在sqfs_for_win\目录下
+- 在cmd 下运行
+ ``` bat
+mksquashfs squashfs-root/ new_rootfs.bin -comp xz
+# mksquashfs 输出的目录/  编辑过的bin文件路径 -comp xz
+  ```
+- 把自己修改过的bin文件重新进行LZMA压缩
+
+### 使用DD工具重新和头文件固件合并 或者和原始固件合并
+```
+dd if=<原始固件> of=head.bin bs=1 count=<头部大小>
+cat head.bin new_rootfs.bin > new_firmware.bin
+```
+- DD 也有Win对应工具 就简单跳过了
+
+### 完成打包就可以去虚拟机运行固件 通过就可以烧录了  
+  
