@@ -1,5 +1,8 @@
 # binwalk_for_Win_v3
 适配在Win10/Win11中的Binwalk v3.x以上版本
+## Fix
+可直接下载 v3.1.1-rc2-devWin版本，目前在Win系统中重构使用7-zip与LZMA本身的API实现了解压业务
+<img width="1093" height="368" alt="企业微信截图_1762937594774" src="https://github.com/user-attachments/assets/0c933a85-442a-4e98-8473-49dcecb477aa" />
 
 ## 版本说明
 binwalk v3 rust重构版完美运行于linux环境，也可以docker部署，但是仍然有部分客户只会使用exe文件双击运行，故此重新适配编译了这个版本
