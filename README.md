@@ -4,6 +4,10 @@
 ## 版本说明
 binwalk v3 rust重构版完美运行于linux环境，也可以docker部署，但是仍然有部分客户只会使用exe文件双击运行，故此重新适配编译了这个版本
 
+## 如需通过源码自主编译，请拉下面项目分支
+```
+git clone -b devWin https://github.com/aspnmy/binwalk.git
+```
 ## 文件说明
 - readme.md 帮助文件
 - binwalk.exe binwalk编译在win11的命令行工具  建议在pwsh下 输入 .\binwalk --help 获得使用方法
