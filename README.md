@@ -19,6 +19,10 @@ binwalk v3 rust重构版完美运行于linux环境，也可以docker部署，但
 - 考虑到部分用户只会双击exe 不会使用python脚本运行GUI交互界面，所以binwalk_gui.exe,使用pyinstaller进行编译后的独立exe GUI文件，使用binwalk_gui.exe的时候，需要和binwalk.exe在同级目录下，才能正确调用
   <img width="894" height="689" alt="image" src="https://github.com/user-attachments/assets/d71eae04-fe19-4e67-b076-9d3a52726f4a" />
 
+- -c参数可以解非标准bin文件
+  <img width="1026" height="689" alt="企业微信截图_17629278156167" src="https://github.com/user-attachments/assets/7da5c05a-42bd-4f22-a79c-17c4443574c3" />
+
+
 ## 路由器固件解包以后重新打包的问题
 
 ### 重新LZMA压缩编辑过的固件
