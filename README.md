@@ -1,3 +1,13 @@
+# binwalk_devWin_WebGUI/WinGUI 全功能版
+
+- 总有客户用不好docker_全功能版，所以新建一个WebGUI分支
+- binwalk_v3_devWin_WebGUI是用RUST语言编写一个基于Caddy的，WebUI，用户只需要上传bin文件，成功解包后下载解包zip文件即可
+- binwalk_v3_devWin_WinGUI是用RUST语言编写一个基于远程服务的，WinUI，用户只需要上传bin文件，成功解包后下载解包zip文件即可
+- 以上两个版本会作为商业版本提供，解包成功扣除bin点，解包失败不扣bin点；bin点通过充值获得，客户群朋友联系自己的群主充值
+- 面向特定需求人群，不面向普罗大众
+  
+
+
 # binwalk_for_全功能版
 - 联系support@e2bank.cn
   
