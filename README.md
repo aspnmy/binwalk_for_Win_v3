@@ -22,7 +22,7 @@ binwalk v3 rust重构版完美运行于linux环境，也可以docker部署，但
 
 ## 如需通过源码自主编译，请拉下面项目分支
 ```
-git clone -b devWin https://github.com/aspnmy/binwalk.git
+git clone -b devWin [https://github.com/aspnmy/binwalk.git](https://github.com/aspnmy/binwalk.git)
 ```
 ## 文件说明
 - readme.md 帮助文件
